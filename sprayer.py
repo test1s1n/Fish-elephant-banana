@@ -6,7 +6,7 @@ from Crypto import Random
 import typing
 import base64
 
-CHUNK_SIZE = 500
+CHUNK_SIZE = 5000
 
 requiredEnvVars = ["METHOD_HEX", "URL_HEX", "HEADERS_HEX", "BODY_HEX", "AES256_KEY_HEX"]
 missingEnvVars = [var for var in requiredEnvVars if os.getenv(var) is None]
